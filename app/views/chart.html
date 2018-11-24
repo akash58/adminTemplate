@@ -5,65 +5,66 @@
     <!-- /.col-lg-12 -->
 </div>
 <div class="row">
-    <div class="col-lg-6 col-sm-12" id="line-chart" ng-controller="ChartCtrl">
-        <div class="panel panel-default">
-            <div class="panel-heading">Line Chart</div>
-            <div class="panel-body">
-                <canvas id="line" class="chart chart-line chart-xl" data="line.data" labels="line.labels" legend="true"
-                click="line.onClick" series="line.series"></canvas>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
-        <div class="panel panel-default">
-            <div class="panel-heading">Bar Chart</div>
-            <div class="panel-body">
-                <canvas id="bar" class="chart chart-bar" data="bar.data" labels="bar.labels" series="bar.series"
-                options="bar.options"></canvas>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6 col-sm-12" id="doughnut-chart" ng-controller="ChartCtrl">
-        <div class="panel panel-default">
-            <div class="panel-heading">Doughnut Chart</div>
-            <div class="panel-body">
-            <canvas id="doughnut" class="chart chart-doughnut chart-xs" data="donut.data" labels="donut.labels" legend="false"></canvas>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6 col-sm-12" id="radar-chart" ng-controller="ChartCtrl">
-        <div class="panel panel-default">
-            <div class="panel-heading">Radar Chart</div>
-            <div class="panel-body">
-                <canvas id="area" class="chart chart-radar" data="radar.data" labels="radar.labels" click="onClick"></canvas>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6 col-sm-12" id="pie-chart" ng-controller="ChartCtrl">
-        <div class="panel panel-default">
-            <div class="panel-heading">Pie Chart</div>
-            <div class="panel-body">
-                <canvas id="pie" class="chart chart-pie chart-xs" data="pie.data" labels="pie.labels"></canvas>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6 col-sm-12" id="polar area-chart" ng-controller="ChartCtrl">
-      <div class="panel panel-default">
-        <div class="panel-heading">Polar Area Chart</div>
-        <div class="panel-body">
-          <canvas id="polar" class="chart chart-polar-area" data="polar.data" labels="polar.labels"></canvas>
-        </div>
+  <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+    <div class="panel panel-default">
+      <div class="panel-heading">Total Crash</div>
+      <div class="panel-body">
+        <canvas id="bar" class="chart chart-bar" data="bar1.data" labels="bar1.labels" series="bar1.series"
+          options="bar1.options"></canvas>
       </div>
     </div>
-    <div class="col-lg-6 col-sm-12" id="base-chart" ng-controller="ChartCtrl">
-        <div class="panel panel-default">
-            <div class="panel-heading">Dynamic Chart</div>
-            <div class="panel-body">
-            <canvas id="base" class="chart chart-base" chart-type="dynamic.type" data="dynamic.data" labels="dynamic.labels" legend="true"></canvas>
-            </div>
-        </div>
-        <button type="button" class="btn btn-primary pull-right" ng-click="dynamic.toggle()">Toggle</button>
+  </div>
+  <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+    <div class="panel panel-default">
+      <div class="panel-heading">Screen-Wise Crash Distribution</div>
+      <div class="panel-body">
+        <canvas id="bar" class="chart chart-bar" data="bar2.data" labels="bar2.labels" series="bar2.series"
+          options="bar2.options"></canvas>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+    <div class="panel panel-default">
+      <div class="panel-heading">Crash-Wise Crash Distribution</div>
+      <div class="panel-body">
+        <canvas id="bar" class="chart chart-bar" data="bar3.data" labels="bar3.labels" series="bar3.series"
+          options="bar3.options"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+    <div class="panel panel-default">
+      <div class="panel-heading">OS-Wise Crash Distribution</div>
+      <div class="panel-body">
+        <canvas id="bar" class="chart chart-bar" data="bar5.data" labels="bar5.labels" series="bar5.series"
+          options="bar5.options"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+    <div class="panel panel-default">
+      <div class="panel-heading">Network-Wise Crash Distribution</div>
+      <div class="panel-body">
+        <canvas id="bar" class="chart chart-bar" data="bar4.data" labels="bar4.labels" series="bar4.series"
+          options="bar4.options"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+    <div class="panel panel-default">
+      <div class="panel-heading">Device-Wise Crash Distribution</div>
+      <div class="panel-body">
+        <canvas id="bar" class="chart chart-bar" data="bar6.data" labels="bar6.labels" series="bar6.series"
+          options="bar6.options"></canvas>
+      </div>
+    </div>
+  </div>
 </div>
